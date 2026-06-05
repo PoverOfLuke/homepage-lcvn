@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="it" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio di progetti web realizzati: siti vetrina, landing page, restyle e molto altro.">
+  <title>Portfolio - LukeDev</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="preloader"><div class="loader"></div></div>
+
+  <nav class="navbar navbar-expand-lg fixed-top" data-aos="fade-down">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">&lt;LukeDev /&gt;</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="funzionalita.html">Funzionalit&agrave;</a></li>
+          <li class="nav-item"><a class="nav-link" href="servizi.html">Servizi</a></li>
+          <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="contatti.html">Contatti</a></li>
+        </ul>
+        <button class="theme-toggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Portfolio</li>
+        </ol>
+      </nav>
+      <h1 data-aos="fade-up">I miei <span class="highlight">progetti</span></h1>
+      <p data-aos="fade-up" data-aos-delay="50">Ogni progetto racconta una storia. Ecco alcuni dei lavori che ho realizzato con passione.</p>
+    </div>
+  </section>
+
+  <section class="portfolio" style="padding-top: 60px;">
+    <div class="container">
+      <div class="text-center mb-4" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">Tutti</button>
+        <button class="filter-btn" data-filter="siti">Siti Vetrina</button>
+        <button class="filter-btn" data-filter="landing">Landing</button>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4 portfolio-item siti" data-aos="zoom-in" data-aos-delay="0">
+          <div class="portfolio-thumb-placeholder" style="background: var(--gradient-1);">
+            <i class="fas fa-store"></i>
+          </div>
+          <div class="portfolio-overlay">
+            <div class="badge bg-primary mb-2 align-self-start">Sito Vetrina</div>
+            <h5>Negozio Alimentari</h5>
+            <p>Sito completo con catalogo prodotti, orari e contatti</p>
+            <div class="portfolio-links">
+              <a href="#"><i class="fas fa-link"></i></a>
+              <a href="#"><i class="fas fa-expand"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 portfolio-item landing" data-aos="zoom-in" data-aos-delay="100">
+          <div class="portfolio-thumb-placeholder" style="background: var(--gradient-2);">
+            <i class="fas fa-dumbbell"></i>
+          </div>
+          <div class="portfolio-overlay">
+            <div class="badge bg-success mb-2 align-self-start">Landing Page</div>
+            <h5>Palestra FitZone</h5>
+            <p>Landing page con form iscrizione e offerte promozionali</p>
+            <div class="portfolio-links">
+              <a href="#"><i class="fas fa-link"></i></a>
+              <a href="#"><i class="fas fa-expand"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 portfolio-item siti" data-aos="zoom-in" data-aos-delay="0">
+          <div class="portfolio-thumb-placeholder" style="background: linear-gradient(135deg, #fc5c7d, #6a82fb);">
+            <i class="fas fa-cut"></i>
+          </div>
+          <div class="portfolio-overlay">
+            <div class="badge bg-primary mb-2 align-self-start">Sito Vetrina</div>
+            <h5>Barbiere Classic</h5>
+            <p>Sito professionale con prenotazione online e gallery</p>
+            <div class="portfolio-links">
+              <a href="#"><i class="fas fa-link"></i></a>
+              <a href="#"><i class="fas fa-expand"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 portfolio-item landing" data-aos="zoom-in" data-aos-delay="100">
+          <div class="portfolio-thumb-placeholder" style="background: linear-gradient(135deg, #11998e, #38ef7d);">
+            <i class="fas fa-pizza-slice"></i>
+          </div>
+          <div class="portfolio-overlay">
+            <div class="badge bg-success mb-2 align-self-start">Landing Page</div>
+            <h5>Pizzeria Da Luigi</h5>
+            <p>Landing page con menu interattivo e ordinazioni</p>
+            <div class="portfolio-links">
+              <a href="#"><i class="fas fa-link"></i></a>
+              <a href="#"><i class="fas fa-expand"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 portfolio-item siti" data-aos="zoom-in" data-aos-delay="0">
+          <div class="portfolio-thumb-placeholder" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+            <i class="fas fa-laptop-medical"></i>
+          </div>
+          <div class="portfolio-overlay">
+            <div class="badge bg-primary mb-2 align-self-start">Sito Vetrina</div>
+            <h5>Studio Medico</h5>
+            <p>Sito informativo con prenotazione visite e contatti</p>
+            <div class="portfolio-links">
+              <a href="#"><i class="fas fa-link"></i></a>
+              <a href="#"><i class="fas fa-expand"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 portfolio-item landing" data-aos="zoom-in" data-aos-delay="100">
+          <div class="portfolio-thumb-placeholder" style="background: linear-gradient(135deg, #a18cd1, #fbc2eb);">
+            <i class="fas fa-camera"></i>
+          </div>
+          <div class="portfolio-overlay">
+            <div class="badge bg-success mb-2 align-self-start">Landing Page</div>
+            <h5>Studio Fotografico</h5>
+            <p>Landing page con gallery, portfolio e richiesta preventivo</p>
+            <div class="portfolio-links">
+              <a href="#"><i class="fas fa-link"></i></a>
+              <a href="#"><i class="fas fa-expand"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2 data-aos="fade-up">Ti serve qualcosa di simile?</h2>
+      <p data-aos="fade-up" data-aos-delay="50">Ogni progetto &egrave; personalizzato. Contattami per parlare della tua idea.</p>
+      <a href="contatti.html" class="btn btn-cta" data-aos="fade-up" data-aos-delay="100"><i class="fas fa-paper-plane me-2"></i>Richiedi il tuo sito personalizzato</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h5>&lt;LukeDev /&gt;</h5>
+          <p>Sviluppatore web freelance &mdash; studio Informatica e creo siti web moderni per piccole attivit&agrave;. Prezzi onesti, risultati professionali.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h5>Link</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="funzionalita.html">Funzionalit&agrave;</a></li>
+            <li><a href="servizi.html">Servizi</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <h5>Servizi</h5>
+          <ul>
+            <li><a href="servizi.html">Siti Vetrina</a></li>
+            <li><a href="servizi.html">Landing Page</a></li>
+            <li><a href="servizi.html">Restyle &amp; Redesign</a></li>
+            <li><a href="servizi.html">Responsive Design</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <h5>Contatti</h5>
+          <ul>
+            <li><a href="mailto:luke@example.com"><i class="fas fa-envelope me-2"></i>luke@example.com</a></li>
+            <li><a href="#"><i class="fas fa-map-marker-alt me-2"></i>Milano, Italia</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="mb-0">&copy; 2026 LukeDev. Tutti i diritti riservati. | P.IVA 00000000000</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

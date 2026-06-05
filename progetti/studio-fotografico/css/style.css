@@ -1,0 +1,48 @@
+:root { --black: #0a0a0a; --gray-dark: #1a1a1a; --gray: #8a8a8a; --light: #f5f5f5; --white: #fff; --gold: #d4a76a; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; background: var(--black); color: var(--light); }
+h1, h2, h3, .serif { font-family: 'Prata', serif; }
+a { transition: all .3s; }
+.navbar { background: transparent !important; padding: 24px 0; position: fixed; width: 100%; z-index: 1000; }
+.navbar-brand { font-family: 'Prata', serif; font-size: 1.2rem; color: var(--white) !important; letter-spacing: 4px; text-transform: uppercase; }
+.navbar .nav-link { color: rgba(255,255,255,.5) !important; font-size: .75rem; text-transform: uppercase; letter-spacing: 2px; margin: 0 16px; font-weight: 300; }
+.navbar .nav-link.active { color: var(--white) !important; }
+.hero { min-height: 100vh; display: flex; align-items: center; padding: 120px 0 80px; position: relative; }
+.hero::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: linear-gradient(to right, transparent, rgba(255,255,255,.1), transparent); }
+.hero h1 { font-size: 5rem; line-height: .9; color: var(--white); font-weight: 400; margin-bottom: 24px; }
+.hero h1 .thin { font-weight: 200; color: var(--gray); }
+.hero .tagline { font-size: .85rem; text-transform: uppercase; letter-spacing: 4px; color: var(--gray); margin-bottom: 24px; }
+.hero p { color: var(--gray); font-size: .95rem; line-height: 1.8; max-width: 400px; font-weight: 300; }
+.hero .btn-primary { background: none; border: 1px solid rgba(255,255,255,.2); color: var(--white); padding: 14px 48px; font-size: .75rem; text-transform: uppercase; letter-spacing: 3px; border-radius: 0; transition: all .4s; }
+.hero .btn-primary:hover { background: var(--white); color: var(--black); }
+.hero .hero-number { font-size: 10rem; font-family: 'Prata', serif; color: rgba(255,255,255,.03); line-height: 1; position: absolute; right: 10%; bottom: 10%; }
+.hero-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.hero-gallery .g-square { background: var(--gray-dark); aspect-ratio: 1; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--gray); transition: all .4s; }
+.hero-gallery .g-square:hover { background: #2a2a2a; color: var(--white); }
+.hero-gallery .g-square:first-child { grid-column: 1 / 3; }
+section { padding: 100px 0; }
+.section-header { margin-bottom: 60px; }
+.section-header .num { font-family: 'Prata', serif; font-size: .9rem; color: var(--gray); letter-spacing: 3px; }
+.section-header h2 { font-size: 2.8rem; color: var(--white); }
+.section-header h2 span { color: var(--gray); font-weight: 200; }
+.section-header p { color: var(--gray); max-width: 400px; font-weight: 300; font-size: .9rem; }
+.work-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.work-item { background: var(--gray-dark); aspect-ratio: 1; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; color: var(--gray); transition: all .4s; cursor: pointer; position: relative; overflow: hidden; }
+.work-item::after { content: ''; position: absolute; inset: 0; border: 1px solid rgba(255,255,255,.05); transition: border-color .4s; }
+.work-item:hover { background: #2a2a2a; color: var(--white); }
+.work-item:hover::after { border-color: rgba(255,255,255,.15); }
+.work-item.landscape { grid-column: span 2; }
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(255,255,255,.05); }
+.services-grid .s-item { background: var(--black); padding: 40px 30px; text-align: center; transition: all .4s; }
+.services-grid .s-item:hover { background: var(--gray-dark); }
+.services-grid .s-item i { font-size: 1.5rem; color: var(--gray); margin-bottom: 16px; }
+.services-grid .s-item h5 { font-family: 'Prata', serif; font-size: 1rem; color: var(--white); }
+.services-grid .s-item p { color: var(--gray); font-size: .8rem; font-weight: 300; }
+.contact-section { border-top: 1px solid rgba(255,255,255,.05); }
+.contact-section h2 { font-size: 3rem; color: var(--white); }
+.contact-section h2 span { color: var(--gray); font-weight: 200; }
+.contact-section .btn { background: none; border: 1px solid rgba(255,255,255,.2); color: var(--white); padding: 14px 48px; font-size: .75rem; text-transform: uppercase; letter-spacing: 3px; border-radius: 0; }
+.contact-section .btn:hover { background: var(--white); color: var(--black); }
+.footer { border-top: 1px solid rgba(255,255,255,.05); padding: 40px 0; }
+.footer p { color: var(--gray); font-size: .8rem; letter-spacing: 1px; font-weight: 300; }

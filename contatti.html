@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="it" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contatta LukeDev per un preventivo gratuito. Raccontami del tuo progetto e ti risponder&ograve; entro 24 ore.">
+  <title>Contatti - LukeDev</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="preloader"><div class="loader"></div></div>
+
+  <nav class="navbar navbar-expand-lg fixed-top" data-aos="fade-down">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">&lt;LukeDev /&gt;</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="funzionalita.html">Funzionalit&agrave;</a></li>
+          <li class="nav-item"><a class="nav-link" href="servizi.html">Servizi</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contatti.html">Contatti</a></li>
+        </ul>
+        <button class="theme-toggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Contatti</li>
+        </ol>
+      </nav>
+      <h1 data-aos="fade-up">Parlami del tuo <span class="highlight">progetto</span></h1>
+      <p data-aos="fade-up" data-aos-delay="50">Compila il form o scrivimi direttamente. Ti rispondo entro 24 ore, senza impegno.</p>
+    </div>
+  </section>
+
+  <section class="contact-section" style="padding-top: 60px;">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="section-header text-start mb-4">
+            <span class="subtitle">Contattami</span>
+            <h2>Informazioni di <span class="highlight">contatto</span></h2>
+            <p>Scegli il metodo che preferisci, sono sempre raggiungibile.</p>
+          </div>
+
+          <div class="row g-3 mb-4">
+            <div class="col-sm-6">
+              <div class="contact-info-card">
+                <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                <h6>Email</h6>
+                <p>luke@example.com</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="contact-info-card">
+                <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                <h6>Zona</h6>
+                <p>Milano, Italia</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex gap-3">
+            <a href="#" class="btn btn-outline-primary rounded-circle p-3" style="width:50px;height:50px;display:flex;align-items:center;justify-content:center;"><i class="fab fa-github"></i></a>
+            <a href="#" class="btn btn-outline-primary rounded-circle p-3" style="width:50px;height:50px;display:flex;align-items:center;justify-content:center;"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="btn btn-outline-primary rounded-circle p-3" style="width:50px;height:50px;display:flex;align-items:center;justify-content:center;"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="contact-form-wrapper">
+            <h4 class="mb-3">Invia un messaggio</h4>
+            <p class="text-secondary mb-4">Raccontami della tua idea o del tuo progetto. Ti ricontatter&ograve; al pi&ugrave; presto.</p>
+            <form id="contactForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold">Nome completo</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Mario Rossi" required>
+                  <div class="invalid-feedback">Inserisci il tuo nome</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="mario@esempio.com" required>
+                  <div class="invalid-feedback">Inserisci un'email valida</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold">Tipo di progetto</label>
+                  <select class="form-select" id="projectType" name="projectType">
+                    <option value="">Seleziona...</option>
+                    <option value="sito-vetrina">Sito Vetrina</option>
+                    <option value="landing-page">Landing Page</option>
+                    <option value="restyle">Restyle / Redesign</option>
+                    <option value="altro">Altro</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                <div class="col-12">
+                  <label class="form-label fw-semibold">Budget indicativo</label>
+                  <div class="d-flex gap-3 flex-wrap">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="budget" id="budget1" value="<100">
+                      <label class="form-check-label" for="budget1">&lt; 100&euro;</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="budget" id="budget2" value="100-200">
+                      <label class="form-check-label" for="budget2">100 - 200&euro;</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="budget" id="budget3" value="200-500">
+                      <label class="form-check-label" for="budget3">200 - 500&euro;</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="budget" id="budget4" value=">500">
+                      <label class="form-check-label" for="budget4">500+&euro;</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="budget" id="budget5" value="non-so">
+                      <label class="form-check-label" for="budget5">Non so / Indeciso</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label class="form-label fw-semibold">Raccontami del tuo progetto</label>
+                  <textarea class="form-control" id="message" name="message" rows="6" placeholder="Descrivi la tua idea... Che tipo di sito ti serve? Per quale attivit&agrave;? Hai gi&agrave; contenuti e immagini? Qualsiasi dettaglio &egrave; utile!" required></textarea>
+                  <div class="invalid-feedback">Inserisci una descrizione del progetto</div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="privacy" name="privacy" required>
+                    <label class="form-check-label" for="privacy" style="font-size:.9rem;">
+                      Accetto il trattamento dei dati personali ai sensi del GDPR <span class="text-danger">*</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn-submit"><i class="fas fa-paper-plane me-2"></i>Invia messaggio</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2 data-aos="fade-up">Hai gi&agrave; un'idea in mente?</h2>
+      <p data-aos="fade-up" data-aos-delay="50">Scrivimi un'email e ti rispondo entro 24 ore. Nessun impegno.</p>
+      <div class="d-flex justify-content-center gap-3 flex-wrap" data-aos="fade-up" data-aos-delay="100">
+        <a href="mailto:luke@example.com" class="btn btn-cta" style="background:var(--primary);color:#fff;"><i class="fas fa-envelope me-2"></i>Scrivimi un'email</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h5>&lt;LukeDev /&gt;</h5>
+          <p>Sviluppatore web freelance &mdash; studio Informatica e creo siti web moderni per piccole attivit&agrave;. Prezzi onesti, risultati professionali.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h5>Link</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="funzionalita.html">Funzionalit&agrave;</a></li>
+            <li><a href="servizi.html">Servizi</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <h5>Servizi</h5>
+          <ul>
+            <li><a href="servizi.html">Siti Vetrina</a></li>
+            <li><a href="servizi.html">Landing Page</a></li>
+            <li><a href="servizi.html">Restyle &amp; Redesign</a></li>
+            <li><a href="servizi.html">Responsive Design</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <h5>Contatti</h5>
+          <ul>
+            <li><a href="mailto:luke@example.com"><i class="fas fa-envelope me-2"></i>luke@example.com</a></li>
+            <li><a href="#"><i class="fas fa-map-marker-alt me-2"></i>Milano, Italia</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="mb-0">&copy; 2026 LukeDev. Tutti i diritti riservati. | P.IVA 00000000000</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <div class="modal fade modal-success" id="successModal" tabindex="-1">
+    <div class="modal-dialog modal-sm modal-dialog-centered">
+      <div class="modal-content">
+        <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+        <h5>Messaggio inviato!</h5>
+        <p class="text-secondary">Grazie per avermi contattato. Ti risponder&ograve; entro 24 ore.</p>
+        <button class="btn btn-primary mt-3" data-bs-dismiss="modal">Chiudi</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
